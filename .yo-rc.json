@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "reactMotion",
+    "style": "css",
+    "postcss": false
+  }
+}
