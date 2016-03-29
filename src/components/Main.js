@@ -8,14 +8,18 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="index">
-        // Simple example showing spring value being passed and how it
-      // increments
+
+        <p>
+          Simple example showing spring value being passed and how it increments
+        </p>
         <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
           {value => <div>{value.x}</div>}
         </Motion>
 
-        // Example showing more typical function structure, has default value of
-        // 10 and 'springs' to 0. Used to change text opacity
+        <p>
+          Example showing more typical function structure, has default value of
+          10 and 'springs' to 0. Used to change text opacity
+        </p>
         <Motion defaultStyle={{x: 10}} style={{x: spring(0)}}>
           { (style) => {
             return (
@@ -30,7 +34,9 @@ class AppComponent extends React.Component {
           }}
         </Motion>
 
-        // Example uses spring to increase font size
+        <p>
+          Example uses spring to increase font size
+        </p>
         <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
           { (style) => {
             return (
